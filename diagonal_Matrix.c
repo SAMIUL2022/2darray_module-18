@@ -12,37 +12,27 @@ for (int i = 0; i < row; i++)
     }
     
 }
-
-if (row!=col)
-{
-     printf(" not Diagonal matrix");
-}
-
 int flag=1;
+
 for (int i = 0; i < row; i++)
 {
     for (int j= 0; j < col; j++)
     {
-      if (i==j)
-      {
-        continue;
-      }
-      if (a[i][j]!=0)
-      {
-        flag=0;
-      }
-      
-      
+        if (a[i][j]!=0)
+        {
+            flag=0;
+        }
+        
     }
     
 }
 if (flag==1)
 {
-    printf("Diagonal matrix");
+    printf("null matrix");
 }
-else
+else 
 {
-    printf(" not Diagonal matrix");
+    printf("not null matrix");
 }
 
 
